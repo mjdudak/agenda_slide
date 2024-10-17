@@ -134,7 +134,7 @@ async function setBoxes(todays_date_obj) {
   date_month.innerText = todays_row[1];
   date_day.innerText = todays_row[2];
   aye_text.innerText = (todays_row[7] ? todays_row[7] : '');
-  agenda_text.innerText = (todays_row[5] ? todays_row[5] : '');
+  agenda_text.innerHTML = (todays_row[5] ? todays_row[5] : '');
   qod_text.innerText = (todays_row[4] ? todays_row[4] : '');
   hw_text.innerText = (todays_row[8] ? todays_row[8]: '');
   announcements_text.innerText = (todays_row[9] ? todays_row[9]: '');
