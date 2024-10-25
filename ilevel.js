@@ -130,13 +130,13 @@ async function setBoxes(todays_date_obj) {
     return setBoxes(date);
   }
   let todays_index = response.result.values.indexOf(todays_row);
-  date_dow.innerText = todays_row[3];
-  date_month.innerText = todays_row[1];
-  date_day.innerText = todays_row[2];
-  aye_text.innerText = (todays_row[7] ? todays_row[7] : '');
+  date_dow.innerHTML = todays_row[3];
+  date_month.innerHTML = todays_row[1];
+  date_day.innerHTML = todays_row[2];
+  aye_text.innerHTML = (todays_row[7] ? todays_row[7] : '');
   agenda_text.innerHTML = (todays_row[5] ? todays_row[5] : '');
-  qod_text.innerText = (todays_row[4] ? todays_row[4] : '');
-  announcements_text.innerText = (todays_row[9] ? todays_row[9]: '');
+  qod_text.innerHTML = (todays_row[4] ? todays_row[4] : '');
+  announcements_text.innerHTML = (todays_row[9] ? todays_row[9]: '');
   twa_text.innerHTML = ""
   for (let i = todays_index+1; i<=todays_index+5; i++){
     let row = response.result.values[i];
